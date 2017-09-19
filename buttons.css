@@ -1,0 +1,260 @@
+/**************************************************************************
+* @package: lib_FormsAndButton
+* @description:  Style Library for Web Forms and Buttons
+* @copyright: (C) 2017 by sumali - Urs Sommerhalder. All rights reserved.
+* @version: Version 1.0.2 - 20.08.2017
+* @Icons: Icons from http://fontawesome.io/
+***************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+/** ------------------------------------------------------------------------
+Buttons
+------------------------------------------------------------------------ **/
+/** Button Style (for all Buttons) **/
+button {
+  /*display: inline-block;*/
+  min-width: 125px;
+  margin: 15px 5px;
+  padding: 10px 15px 12px;
+  border: none;
+  border-radius: 3Px;
+  font: 700 12px/1 'Open Sans', sans-serif;
+  /*font: 12px/1 Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+  box-shadow: none;
+  cursor: pointer;
+  /* Default Color */
+  color: #777;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  background: #d6d6d6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:hover { background: #f5f5f5 }
+
+/* Colors */
+.btnBlue,
+.btnGreen,
+.btnRed,
+.btnBlack
+{
+	color: #fff;
+  	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+.btnBlue { background: #59d; }
+.btnGreen { background: #6b6; }
+.btnRed { background: #d33; }
+.btnBlack { background: #555 }
+
+.btnBlue:hover { background: #48c }
+.btnGreen:hover { background: #5a5 }
+.btnRed:hover { background: #c22 }
+.btnBlack:hover { background: #444 }
+
+/* Icons */
+.btnIcon {
+	position: relative;
+	padding-left: 40px;
+	text-align: left;
+}
+
+.btnIcon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  padding: 10px 0 12px;
+  font-family: fontawesome;
+  text-align: center;
+  border-radius: 3px 0 0 3px;
+  background: rgba(0,0,0,.15);
+}
+/** Button SAVE (Speichern) **/
+.btnIcoSave:before { 
+	content: '\f0c7'; 
+	text-shadow: none;
+}
+/** Button DELETE (Löschen) **/
+.btnIcoDelete:before { 
+	content: '\f014';
+	text-shadow: none;
+}
+/** Button CANCEL (Abbrechen) **/
+.btnIcoCancel:before { 
+	content: '\f05e';
+	text-shadow: none;
+}
+/** Button CHECK () '\f00c' **/
+/** Button BACK (zurück) **/
+.btnIcoBack:before { 
+	content: '\f053';
+	text-shadow: none;
+}
+/** Button CONTINUE (Vorwärts,Weiter) **/
+.btnIcoContinue:before { 
+	content: '\f054';
+	text-shadow: none;
+}
+/** Button REFRESH (Aktualisieren) **/
+.btnIcoRefresh:before { 
+	content: '\f021';
+	text-shadow: none;
+}
+/** Button TWEET (Tweet) **/
+.btnIcoTweet:before { 
+	content: '\f099';
+	text-shadow: none;
+}
+/** Button SEND (Absenden) **/
+.btnIcoSend:before { 
+	content: '\f003';
+	text-shadow: none;
+}
+/** Button LOGIN (Anmelden) **/
+/** <i class="fa fa-sign-in" aria-hidden="true"></i> **/
+.btnIcoLogin:before { 
+	content: '\f090';
+	text-shadow: none;
+}
+/** Button LOGOUT (Abmelden) **/
+/** <i class="fa fa-sign-out" aria-hidden="true"></i> **/
+.btnIcoLogout:before { 
+	content: '\f08b';
+	text-shadow: none;
+}
+
+/** ------------------------------------------------------------------------
+Forms
+------------------------------------------------------------------------ **/
+/* General Setting for Display as Table */
+.inputGroup {
+    display: table;
+	box-sizing: border-box;
+}
+
+.inputGroupAddon,
+.inputGroup .inputGroupFormControl {
+    display: table-cell;
+	box-sizing: border-box;
+}
+/* DIV Input Group */
+.inputGroup {
+    position: relative;
+    border-collapse: separate;
+}
+
+.inputGroupBottomSM {
+    margin-bottom: 5px !important;
+}
+
+/* FIELDSET */
+fieldset {
+	border: 0;
+}
+
+.inputGroupLoginSet .inputGroup:first-child .inputGroupAddon
+{
+	border-radius: 4Px 0 0 0;
+	border-bottom: 0;
+}
+
+.inputGroupLoginSet .inputGroup:first-child .inputGroupFormControl 
+{
+	border-radius: 0 4Px 0 0;
+	border-bottom: 0;
+}
+
+.inputGroupLoginSet .inputGroup:last-child .inputGroupAddon
+{
+	border-radius: 0 0 0 4Px;
+}
+
+.inputGroupLoginSet .inputGroup:last-child .inputGroupFormControl 
+{
+	border-radius: 0 0 4Px 0;
+}
+
+.inputGroupLoginSet .inputGroup .inputGroupAddon,
+.inputGroupLoginSet .inputGroup .inputGroupFormControl 
+{
+	border-radius:  0;
+}
+
+/* Set Border on first and last child */
+.inputGroup:first-child,
+.inputGroupAddon:first-child,
+.inputGroup .inputGroupFormControl:first-child {
+	border-right: 0;
+	border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.inputGroup:last-child,
+.inputGroupAddon:last-child,
+.inputGroup .inputGroupFormControl:last-child {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+/* Icon befor InputBox */
+.inputGroupAddon {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: rgb(204, 204, 204);
+	border-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	box-sizing: border-box;
+	width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;	
+}
+
+.inputGroup .inputGroupFormControl {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.inputGroupFormControl {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.inputGroupFormControl:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/** Input Validation **/
+label.correct {
+}
+label.faild {
+	color: #F00;
+}

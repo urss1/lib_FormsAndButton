@@ -1,0 +1,174 @@
+/**************************************************************************
+* @package: lib_FormsAndButton
+* @description:  Sample for Library FormsAndButtons
+* @copyright: (C) 2017 by sumali - Urs Sommerhalder. All rights reserved.
+* @version: Version 1.0.1 - 12.08.2017
+***************************************************************************/
+
+/** ------------------------------------------------------------------------
+Body definition
+------------------------------------------------------------------------ **/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: #CCCCCC;
+	background-repeat: repeat-x;
+	color: #666666;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14Px;
+}
+/** ------------------------------------------------------------------------
+sumali - Definitions for Sample-Pages
+------------------------------------------------------------------------ **/
+/** ------------------------------
+Links
+------------------------------ **/
+a {
+	color: #00AAD3;
+}
+a:hover {
+	color: #002FFF;
+}
+
+/** ------------------------------
+Content
+------------------------------ **/
+ul {
+	padding: 2Px 5px 2Px 15Px;
+}
+
+li {
+	padding: 2Px 0 0 10Px;
+	list-style: circle;
+}
+/* Titles */
+h1 {
+	font-size: 28Px;
+	color: #00AAD3;
+	font-weight: bold;
+}
+h2 {
+	font-size: 20Px;
+	color: #666666;
+	font-weight: bold;
+}
+h3 {
+	font-size: 16Px;
+	color: #46BAB9;
+	font-weight: bold;
+}
+
+h1,h2,h3 {
+	padding-top: 6px;
+	margin-bottom: 4px;
+}
+/* Code */
+pre {
+	background-color: #EDF6F6;
+	border: #67C1BF solid 1Px;
+	margin: 10Px 10Px 5Px 0Px;
+	padding: 12Px 5Px 10Px 10Px;
+	font-family: "Courier New", Courier, monospace;
+}
+code {
+	font: lighter 12px/20px Monaco,'MonacoRegular',monospace;
+}
+/* Content */
+.content {
+	padding: 8px 20px 0 30px;
+}
+.content .desc {
+	color: #666;
+	font-size: 11Px;
+	padding: 0Px 2Px 0Px 2Px;
+}
+.content .desc a {
+	color: #666;
+	font-size: 11Px;
+	text-decoration: none;
+}
+.content .desc a:hover {
+	color: #06C;
+	font-size: 11Px;
+	text-decoration: none;
+}
+.content_table_div {
+	padding-top: 10Px;
+	padding-left: 10Px;
+	padding-right: 5Px;
+	padding-bottom: 0Px;
+}
+/* table */
+.content table {
+	padding: 2px 5px 2px 15px;
+	text-align: left;
+	vertical-align: top;
+}
+.content table tr td {
+	text-align: left;
+	vertical-align: top;
+}
+.table_head,
+.tableHead {
+	background: #666666;
+	color: #FFFFFF; /* GEOBOX Haupt-Grau */
+	/*font-style:italic;*/
+	font-size: 11px;
+	line-height: 15px;
+}
+tr.tableHead td {
+	padding-left: 2px;
+}
+/** ------------------------------
+Others
+------------------------------ **/
+.clearer {clear: both; font-size: 0;}
+.left {float: left;}
+.right {float: right;}
+/** ------------------------------
+Layout
+------------------------------ **/
+.container {
+	padding-top: 20Px;
+	padding-bottom: 20Px;
+}
+.inner-container {
+	background: #FFF;
+	background-repeat: repeat-x;
+	margin: 0 auto;
+	padding: 0Px;
+	width: 980px;
+}
+.header {
+	background-color: #FFF;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.header h1 {
+	padding-left: 30Px;
+	padding-top: 10Px;
+}
+.footer {
+	background: #000;
+	color: #c8c8c8;
+	font-size: 10Px;
+	font-weight: normal;
+	margin-top: 5px;
+	padding: 10px 30px 0px 30px;
+	height: 30px;
+	
+}
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #39bbdc;
+}
